@@ -60,3 +60,12 @@ I didn't want to spend too much longer on this, but I think it could be improved
 3. Toggle visibility so only one form is visible at a time
 4. Add errors states to each form
 5. Scroll to bottom of the page when a new employee is added.
+6. Display the entire employee card in search results
+7. I meant to create a new branch with my work, but that never happened. I will copy my PR message below:
+
+***What this PR does***
+
+1. Adds a sidebar / main content layout using flex box
+2. Adds a set of lis which function as buttons to the sidebar, revealing and hiding the relevant forms and data
+3. Renders a list of employee cards for each employee in the list
+4. Allows a user to display the data, add a new employee, verify presence of existing employee, update employee number and phone, and delete an employee
