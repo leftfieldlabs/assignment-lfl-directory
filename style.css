@@ -1,1 +1,92 @@
 /* Your work here */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #c0ffee;
+  --radius: '5px';
+}
+
+#root {
+  display: flex;
+  width: 100%;
+}
+
+#side-content {
+  display: flex;
+  width: 25vw;
+  max-width: 350px;
+  background-color: #de1e7e;
+  padding-top: 10vh;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+#options-list {
+  list-style: none;
+  width: fit-content;
+  padding: 0;
+  list-style-type: none;
+}
+
+#options-list li {
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#employee-list {
+  list-style: none;
+  width: fit-content;
+}
+
+.employee-card {
+  width: 35vw;
+  max-width: 550px;
+  box-shadow: 1px 2px 6px 1px;
+  margin-bottom: 25px;
+  padding: 5px 0 5px 10px;
+  position: relative;
+}
+
+.remove-employee {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  padding-top: 20px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.side-nav-button {
+  cursor: pointer;
+  padding: 5px;
+}
+
+#search-results {
+  padding: 40px 0 0 40px;
+}
+
+input {
+  padding: 7px;
+  margin-right: 5px;
+}

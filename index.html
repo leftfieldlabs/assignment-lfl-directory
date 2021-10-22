@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>LFL Employee Directory</title>
   </head>
 
   <body>
+    <div id="root">
+      <aside id="side-content">
+        <h1>Directory</h1>
+        <ul id="options-list">
+          <li role="button" id="view-employees" class="side-nav-button">view</li>
+          <li role="button" id="add-employee" class="side-nav-button">add</li>
+          <li role="button" id="verify-employee" class="side-nav-button">verify</li>
+          <li role="button" id="update-employee" class="side-nav-button">update</li>
+        </ul>
+      </aside>
+      <main id="main-content">
+        <form class="hidden" id="new-employee-form" name="new-employee-form">
+          <input type="text" name="name" id="name" placeholder="Employee Name" required />
+          <input type="number" id="office" name="office-number" placeholder="Office Number" required />
+          <input type="phone" id="phone" name="phone-number" placeholder="Phone Number" required />
+          <button type="submit"><img src="images/user-plus.svg" alt="add user" /></button>
+        </form>
+        <form class="hidden" id="update-employee-form" name="update-employee-form">
+          <input type="text" name="update-name" id="update-name" placeholder="Employee Name" required />
+          <input type="number" id="update-office" name="office-number" placeholder="Office Number" required />
+          <input type="phone" id="update-phone" name="update-phone-number" placeholder="Phone Number" required />
+          <button type="submit"><img src="images/check.svg" alt="update" /></button>
+        </form>
+        <form class="hidden" id="verify-employee-form" name="verify-employee-form">
+          <input type="text" name="verify-name" id="verify-name" placeholder="Employee Name" required />
+          <button type="submit"><img src="images/search.svg" alt="search" /></button>
+        </form>
+        <ul id="employee-list"></ul>
+        <div id="search-results" class="hidden">no results</div>
+      </main>
+    </div>
     <script src="dom.js"></script>
     <script src="employee-list.js"></script>
+    <script src="utils.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
